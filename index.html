@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虚拟钢琴</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>虚拟钢琴</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="camera-container">
+                <video id="video" playsinline></video>
+            </div>
+            <div class="piano-container">
+                <div class="piano-keys">
+                    <div class="key" data-note="C4">C</div>
+                    <div class="key" data-note="D4">D</div>
+                    <div class="key" data-note="E4">E</div>
+                    <div class="key" data-note="F4">F</div>
+                    <div class="key" data-note="G4">G</div>
+                    <div class="key" data-note="A4">A</div>
+                    <div class="key" data-note="B4">B</div>
+                    <div class="key" data-note="C5">C</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>使用手指在摄像头前移动来弹奏钢琴</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
